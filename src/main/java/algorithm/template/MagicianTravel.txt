@@ -1,0 +1,46 @@
+Question
+A state consists of N cities numbered from 0 to N-1. All the roads in the state are bidirectional. Each city is connected to another city by one direct road only. A magician travels to these cities to perform shows. He knows a magic spell that can completely eliminate the distance between any two direct connected cities. But he must be very careful because this magic spell can be performed only K number of times.
+
+Write an algorithm to find the length of the shortest route between two given cities after performing the magic spell K number of times. The output is 
+-1 if no path exists.
+
+Input:
+The first line of the input consists of an integer- numCities, representing the number of cities (N).
+The second line consists of an integer - cityA, representing the city A.
+The third line consists of an integer - cityB, representing the city B.
+The fourth line consists of an integer - numMagic, representing the number of times the magician can perform the magic spell (K).
+The fifth line consists of two space-separated integers - numRoads and roadProp, representing the number of roads (M) and number of given properties of each road (roadProp(R) is always equal to 3), respectively.
+
+The next M lines consist of R space-separated integers - cityU, cityV and lenW, where cityU and cityV represent the cities and lenW represents the length of the bidirectional road between the cities.
+
+Output:
+Print an integer representing the length of the shortest route between the two given cities after performing the magic spell K number of times. Print -1 if no path exists.
+
+Constraints
+1 <= numCities≤1000
+
+0 <= numMagic <= numCities
+0 <= cityA, cityB < numCities
+0 <= numRoads <= 10^4
+1 <= lenW <= 1000
+
+Example Input:
+5
+0
+3
+1
+5 3
+0 1 1
+0 4 1
+1 2 2
+2 3 4
+4 3 7
+
+Output:
+1
+
+Explanation:
+There are two possible routes between 0 and 3:
+0->1->2->3 and 0->4->3
+
+After reducing the distance of edge 4->3 to zero, the second route becomes 0->(4,3) and thus the minimum distance is 1.
