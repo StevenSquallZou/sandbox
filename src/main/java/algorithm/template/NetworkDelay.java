@@ -24,7 +24,7 @@ https://leetcode.cn/problems/network-delay-time/description/
 输出：-1
 */
 
-public class Solution {
+public class NetworkDelay {
     public int networkDelayTime(int[][] times, int n, int k) {
         // 创建图的邻接表表示
         Map<Integer, List<int[]>> graph = new HashMap<>();
