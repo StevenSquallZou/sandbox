@@ -11,49 +11,49 @@ class LongestSubstringWithoutRepeatingCharactersTest {
 
 
     @BeforeEach
-    public void setUp() {
+    void setUp() {
         solution = new LongestSubstringWithoutRepeatingCharacters();
     }
 
 
     @Test
-    void lengthOfLongestSubstring1() {
+    void testLengthOfLongestSubstring1() {
         // arrange
         String str = "abcabcbb";
+        int expected = 3;
 
         // act
         int actual = solution.lengthOfLongestSubstring(str);
 
         // assert
-        int expected = 3;
         assertEquals(expected, actual);
     }
 
 
     @Test
-    void lengthOfLongestSubstring2() {
+    void testLengthOfLongestSubstring2() {
         // arrange
         String str = "bbbbb";
+        int expected = 1;
 
         // act
         int actual = solution.lengthOfLongestSubstring(str);
 
         // assert
-        int expected = 1;
         assertEquals(expected, actual);
     }
 
 
     @Test
-    void lengthOfLongestSubstring3() {
+    void testLengthOfLongestSubstring3() {
         // arrange
         String str = "pwwkew";
+        int expected = 3;
 
         // act
         int actual = solution.lengthOfLongestSubstring(str);
 
         // assert
-        int expected = 3;
         assertEquals(expected, actual);
     }
 

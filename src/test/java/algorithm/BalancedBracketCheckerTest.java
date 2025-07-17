@@ -21,8 +21,10 @@ class BalancedBracketCheckerTest {
      */
     @Test
     void testCheckBracketBalanced1() {
+        // act
         boolean actual = balancedBracketChecker.checkBracketBalanced("(){}[]");
 
+        // assert
         assertTrue(actual);
     }
 
@@ -31,8 +33,10 @@ class BalancedBracketCheckerTest {
      */
     @Test
     void testCheckBracketBalanced2() {
+        // act
         boolean actual = balancedBracketChecker.checkBracketBalanced("(({{))}}");
 
+        // assert
         assertTrue(actual);
     }
 
@@ -42,8 +46,10 @@ class BalancedBracketCheckerTest {
      */
     @Test
     void testCheckBracketBalanced3() {
+        // assert
         boolean actual = balancedBracketChecker.checkBracketBalanced("({)");
 
+        // assert
         assertFalse(actual);
     }
 
@@ -53,8 +59,10 @@ class BalancedBracketCheckerTest {
      */
     @Test
     void testCheckBracketBalanced4() {
+        // assert
         boolean actual = balancedBracketChecker.checkBracketBalanced("(})");
 
+        // assert
         assertFalse(actual);
     }
 

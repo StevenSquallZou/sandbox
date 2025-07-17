@@ -17,20 +17,28 @@ class LongestPalindromicSubstringTest {
 
 
     @Test
-    void longestPalindrome1() {
-        String actual = longestPalindromicSubstring.longestPalindrome("babad");
+    void testLongestPalindrome1() {
+        // arrange
         String expected1 = "bab";
         String expected2 = "aba";
 
+        // act
+        String actual = longestPalindromicSubstring.longestPalindrome("babad");
+
+        // assert
         assertTrue(expected1.equals(actual) || expected2.equals(actual));
     }
 
 
     @Test
-    void longestPalindrome2() {
-        String actual = longestPalindromicSubstring.longestPalindrome("cbbd");
+    void testLongestPalindrome2() {
+        // arrange
         String expected = "bb";
 
+        // act
+        String actual = longestPalindromicSubstring.longestPalindrome("cbbd");
+
+        // assert
         assertEquals(expected, actual);
     }
 

@@ -17,67 +17,67 @@ class ShortestLengthSumGreaterThanTargetTest {
 
 
     @Test
-    void calculateShortestLength1() {
+    void testCalculateShortestLength1() {
         // arrange
         int[] array = {2, 3, 1, 2, 4, 3};
         int target = 7;
+        int expected = 2; // [4, 3]
 
         // act
         int actual = shortestLengthSumGreaterThanTarget.calculateShortestLength(array, target);
 
         // asset
-        int expected = 2; // [4, 3]
         assertEquals(expected, actual);
     }
 
 
     @Test
-    void calculateShortestLength2() {
+    void testCalculateShortestLength2() {
         // arrange
         int[] array = {2, 3, 1, 2, 4, 3};
         int target = 8;
+        int expected = 3; // [2, 4, 3]
 
         // act
         int actual = shortestLengthSumGreaterThanTarget.calculateShortestLength(array, target);
 
         // asset
-        int expected = 3; // [2, 4, 3]
         assertEquals(expected, actual);
     }
 
 
     @Test
-    void calculateShortestLength3() {
+    void testCalculateShortestLength3() {
         // arrange
         int[] array = {2, 3, 1, 2, 4, 3};
         int target = 9;
+        int expected = 3; // [2, 4, 3]
 
         // act
         int actual = shortestLengthSumGreaterThanTarget.calculateShortestLength(array, target);
 
         // asset
-        int expected = 3; // [2, 4, 3]
         assertEquals(expected, actual);
     }
 
 
     @Test
-    void calculateShortestLength4() {
+    void testCalculateShortestLength4() {
         // arrange
         int[] array = {2, 3, 1, 2, 4, 3};
         int target = 10;
+        int expected = 4; // [3, 1, 2, 4] or [1, 2, 4, 3]
 
         // act
         int actual = shortestLengthSumGreaterThanTarget.calculateShortestLength(array, target);
 
         // asset
-        int expected = 4; // [3, 1, 2, 4] or [1, 2, 4, 3]
         assertEquals(expected, actual);
     }
 
 
     @Test
-    void calculateShortestLength5() {
+    void testCalculateShortestLength5() {
         // arrange
         int[] array = {2, 3, 1, 2, 4, 3};
         int target = 15;
@@ -92,7 +92,7 @@ class ShortestLengthSumGreaterThanTargetTest {
 
 
     @Test
-    void calculateShortestLength6() {
+    void testCalculateShortestLength6() {
         // arrange
         int[] array = {2, 3, 1, 2, 4, 3};
         int target = 1;
@@ -107,7 +107,7 @@ class ShortestLengthSumGreaterThanTargetTest {
 
 
     @Test
-    void calculateShortestLength7() {
+    void testCalculateShortestLength7() {
         // arrange
         int[] array = {2, 3, 1, 2, 4, 3};
         int target = 100;
