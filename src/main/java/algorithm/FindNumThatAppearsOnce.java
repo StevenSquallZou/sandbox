@@ -2,7 +2,8 @@ package algorithm;
 
 
 /**
- * Given a integer array nums where all numbers appears twice except one which appears only one time.
+ * (Coding test from SCB outsourcing dispatch)
+ * Given a integer array nums where all numbers appear twice except one which appears only one time.
  * Find the number which appears only once.
  * Note: No extra memory space should be used.
  * Input: [1,1,4,4,2,3,3,8,8]

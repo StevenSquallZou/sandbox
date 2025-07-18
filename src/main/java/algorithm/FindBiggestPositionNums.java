@@ -9,6 +9,7 @@ import java.util.List;
 
 
 /**
+ * (SCB OD coding test)
  * given an array of int
  * 5, 3, 2, 4, 1, 4
  * biggestPosition=2
