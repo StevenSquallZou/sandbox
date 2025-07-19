@@ -10,8 +10,8 @@ public class MyTest {
     public static void main(String[] args) {
         log.info("Started");
 
-        Object result = null;
-        log.info("Result: {}", result);
+        log.info("Result: {}", Integer.MAX_VALUE + 1);
+        log.info("Result: {}", Integer.MIN_VALUE);
 
         log.info("Ended");
     }
