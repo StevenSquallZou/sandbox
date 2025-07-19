@@ -10,8 +10,8 @@ public class MyTest {
     public static void main(String[] args) {
         log.info("Started");
 
-        int i = 9 / 2;
-        log.info("Result: {}", i);
+        Object result = null;
+        log.info("Result: {}", result);
 
         log.info("Ended");
     }
