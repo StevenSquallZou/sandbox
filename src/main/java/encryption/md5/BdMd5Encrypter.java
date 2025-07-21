@@ -1,4 +1,4 @@
-package md5;
+package encryption.md5;
 
 
 import lombok.extern.slf4j.Slf4j;
