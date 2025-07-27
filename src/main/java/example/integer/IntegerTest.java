@@ -15,7 +15,7 @@ public class IntegerTest {
         log.info("Result: {}", (int)'9');
         log.info("Integer.MAX_VALUE: {}", Integer.MAX_VALUE); // 2147483647
         log.info("Integer.MIN_VALUE: {}", Integer.MIN_VALUE); // -2147483648
-        log.info("Integer.MIN_VALUE + 1: {}", Integer.MIN_VALUE + 1);
+        log.info("Integer.MIN_VALUE + 1: {}", Integer.MIN_VALUE + 1); // -2147483647
 
         log.info("Ended");
     }

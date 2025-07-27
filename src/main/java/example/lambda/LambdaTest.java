@@ -19,12 +19,14 @@ public class LambdaTest {
     @Test
     public void runnable() {
         // Traditional way
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                log.info("Running thread");
+        new Thread(
+            new Runnable() {
+                @Override
+                public void run() {
+                    log.info("Running thread");
+                }
             }
-        }).start();
+        ).start();
 
         // With lambda
         new Thread(() -> log.info("Running thread")).start();
