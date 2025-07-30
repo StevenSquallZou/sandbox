@@ -1,14 +1,13 @@
-package example;
+package example.collection;
 
 
 import lombok.extern.slf4j.Slf4j;
 import java.util.Map;
-import java.util.Stack;
 import java.util.TreeMap;
 
 
 @Slf4j
-public class MyTest {
+public class TreeMapTest {
 
     public static void main(String[] args) {
         log.info("Started");
@@ -21,7 +20,7 @@ public class MyTest {
 
         // 遍历方式
         for (Map.Entry<String, Integer> entry : treeMap.entrySet()) {
-            System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
+            log.info("Key: {}, Value: ", entry.getKey(), entry.getValue());
         }
 
         log.info("Ended");
