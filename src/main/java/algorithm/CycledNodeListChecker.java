@@ -4,6 +4,11 @@ package algorithm;
 import lombok.extern.slf4j.Slf4j;
 
 
+/**
+ * 给你一个链表的头节点 head ，判断链表中是否有环。
+ * 如果链表中有某个节点，可以通过连续跟踪 next 指针再次到达，则链表中存在环
+ * 如果链表中存在环 ，则返回 true 。 否则，返回 false 。
+ */
 @Slf4j
 public class CycledNodeListChecker {
 
