@@ -6,24 +6,24 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 
-class LongestSubstringWithoutRepeatingCharactersTest {
-    private LongestSubstrWithoutRepeatingChars solution;
+class LongestSubstringWithoutRepeatingCharactersMyWayTest {
+    private LongestSubstrWithoutRepeatingCharsMyWay solution;
 
 
     @BeforeEach
     void setUp() {
-        solution = new LongestSubstrWithoutRepeatingChars();
+        solution = new LongestSubstrWithoutRepeatingCharsMyWay();
     }
 
 
     @Test
-    void testLengthOfLongestSubstring1() {
+    void testCheck1() {
         // arrange
         String str = "abcabcbb";
         int expected = 3;
 
         // act
-        int actual = solution.lengthOfLongestSubstring(str);
+        int actual = solution.check(str);
 
         // assert
         assertEquals(expected, actual);
@@ -31,13 +31,13 @@ class LongestSubstringWithoutRepeatingCharactersTest {
 
 
     @Test
-    void testLengthOfLongestSubstring2() {
+    void testCheck2() {
         // arrange
-        String str = "bbbbb";
+        String str = "aaaaa";
         int expected = 1;
 
         // act
-        int actual = solution.lengthOfLongestSubstring(str);
+        int actual = solution.check(str);
 
         // assert
         assertEquals(expected, actual);
@@ -45,13 +45,27 @@ class LongestSubstringWithoutRepeatingCharactersTest {
 
 
     @Test
-    void testLengthOfLongestSubstring3() {
+    void testCheck3() {
+        // arrange
+        String str = "addbcd";
+        int expected = 3;
+
+        // act
+        int actual = solution.check(str);
+
+        // assert
+        assertEquals(expected, actual);
+    }
+
+
+    @Test
+    void testCheck4() {
         // arrange
         String str = "pwwkew";
         int expected = 3;
 
         // act
-        int actual = solution.lengthOfLongestSubstring(str);
+        int actual = solution.check(str);
 
         // assert
         assertEquals(expected, actual);

@@ -11,7 +11,6 @@ public class MyTest {
     public static void main(String[] args) {
         log.info("Started");
 
-
         log.info("Result: {}", (int)'0');
         log.info("Result: {}", (int)'9');
         log.info("Result: {}", Integer.MAX_VALUE); // 2147483647

@@ -24,7 +24,7 @@ import java.util.Arrays;
  *     0 <= s.length <= 5 * 104
  *     s consists of English letters, digits, symbols and spaces.
  */
-public class LongestSubstringWithoutRepeatingCharacters {
+public class LongestSubstrWithoutRepeatingChars {
 
     public int lengthOfLongestSubstring(String s) {
         int left = 0;
