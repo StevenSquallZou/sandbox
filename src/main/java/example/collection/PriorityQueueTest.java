@@ -25,7 +25,7 @@ public class PriorityQueueTest {
      * get the top N nums from a given nums
      */
     @Test
-    public void testGetTopNNums() {
+    public void testGetTopNBiggestNums() {
         int[] nums = {3, 1, 2, 0, 9, 5, 8, 7, 6, 4};
         int topN = 7;
 
