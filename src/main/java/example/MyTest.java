@@ -9,20 +9,24 @@ import java.util.TreeMap;
 
 @Slf4j
 public class MyTest {
+    private static final String USER_QUERY_WITH_LIMIT =
+        """
+        SELECT
+            u.user_id, u.username, u.password_hash, r.resource_name
+        FROM profile.user_resource ur
+        JOIN profile.users u ON u.user_id = ur.user_id
+        JOIN profile.resource r ON r.resource_id = ur.resource_id
+        ORDER BY ur.user_resource_id
+        LIMIT %d
+        OFFSET %d
+        """;
+
 
     public static void main(String[] args) {
         log.info("Started");
 
-        TreeMap<String, Integer> treeMap = new TreeMap<>();
-        // 添加示例数据
-        treeMap.put("ac", 10);
-        treeMap.put("ab", 15);
-        treeMap.put("aa", 20);
-
-        // 遍历方式
-        for (Map.Entry<String, Integer> entry : treeMap.entrySet()) {
-            System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
-        }
+        Object result = USER_QUERY_WITH_LIMIT;
+        log.info("Result: \n{}", result);
 
         log.info("Ended");
     }

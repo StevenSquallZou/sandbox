@@ -3,9 +3,7 @@ package example.lambda;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -189,6 +187,22 @@ public class LambdaTest {
 
         // Constructor reference
         Supplier<List<String>> supplier2 = ArrayList::new;
+    }
+    
+    
+    @Test
+    public void computeIfAbsent() {
+        Map<Integer, List<String>> listMap = new HashMap<>();
+
+        List<String> list = listMap.computeIfAbsent(1, k -> new ArrayList<>());
+        list.add("a");
+        list.add("A");
+
+        List<String> list2 = listMap.computeIfAbsent(2, k -> new ArrayList<>());
+        list2.add("b");
+        list2.add("B");
+
+        log.info("result: {}", listMap);
     }
 
 }
